@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>ColorBot</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+            <h1 class="mb-4">ColorBot</h1>
+
+            <div id="chatbox" class="card">
+                <div id="messages"></div>
+            </div>
+            <div id="input-container">
+                <input type="text" id="user-input" class="form-control my-3" placeholder="Wpisz kolor">
+                <button id="send-btn" class="btn btn-success">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <script src="assets/js/bootstrap.bundle.min.js"></script>       
+        <script src="bot.js"></script>
+    </body>
+</html>
