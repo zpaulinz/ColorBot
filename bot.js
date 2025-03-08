@@ -61,8 +61,20 @@ function getBotResponse(input) {
     }
 
     if (colorExamples[color]) {
-        return `Przykłady przedmiotów w kolorze ${color}m:\n${colorExamples[color]}`;
+        return `Przykłady przedmiotów w kolorze ${color}m:\n${colorExamples[color]}.`;
     } else {
         return `Przepraszam, nie znam koloru "${input}".`;
     }
 }
+
+let userInput = document.getElementById('user-input');
+let inputHint = document.getElementById('input-hint');
+
+userInput.addEventListener('input', function() {
+    if (userInput.value.length > 0) {
+        inputHint.style.display = 'none';
+    } else {
+        inputHint.style.display = 'block';
+    }
+});
+
