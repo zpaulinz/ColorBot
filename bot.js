@@ -1,3 +1,5 @@
+// Copyright (c) 2025 Paulina Zabielska
+// All rights reserved. This code cannot be used, copied, modified, or distributed for commercial purposes without the author's permission.
 document.getElementById('send-btn').addEventListener('click', function() {
     let userInput = document.getElementById('user-input').value;
     if (userInput) {
